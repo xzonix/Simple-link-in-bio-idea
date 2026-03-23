@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>xzonix</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #000000;
+      --text: #d9d9d9;
+      --muted: #5f6368;
+      --line: rgba(255, 255, 255, 0.07);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      width: 100%;
+      min-height: 100%;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      font-smoothing: antialiased;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .center-wrap {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding-top: 115px;
+      padding-bottom: 120px;
+    }
+
+    .content {
+      width: 100%;
+      max-width: 430px;
+      padding: 0 32px;
+    }
+
+    .hero {
+      margin-bottom: 88px;
+    }
+
+    .name {
+      font-family: "Inter", sans-serif;
+      font-size: 27px;
+      line-height: 1.1;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      color: #e8e8e8;
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    .tagline {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 18px;
+      line-height: 1.2;
+      color: var(--muted);
+      font-weight: 400;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 42px;
+    }
+
+    .links a {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 22px;
+      line-height: 1.1;
+      color: #b8b8b8;
+      text-decoration: none;
+      transition: color 0.15s ease, transform 0.15s ease;
+      width: fit-content;
+    }
+
+    .links a:hover {
+      color: #ffffff;
+      transform: translateX(2px);
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 18px 24px 22px;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 34px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 16px;
+      color: #787d84;
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+
+    .footer-links a:hover {
+      color: #ffffff;
+    }
+
+    @media (max-width: 768px) {
+      .center-wrap {
+        padding-top: 90px;
+        padding-bottom: 100px;
+      }
+
+      .content {
+        max-width: 360px;
+      }
+
+      .hero {
+        margin-bottom: 72px;
+      }
+
+      .name {
+        font-size: 24px;
+      }
+
+      .tagline {
+        font-size: 16px;
+      }
+
+      .links {
+        gap: 34px;
+      }
+
+      .links a {
+        font-size: 20px;
+      }
+
+      .footer-links {
+        gap: 24px;
+      }
+
+      .footer-links a {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="center-wrap">
+      <main class="content">
+        <section class="hero">
+          <a class="name" href="/">xzonix</a>
+          <div class="tagline">it & economy student</div>
+        </section>
+
+        <nav class="links">
+        <a href="https://github.com/xzonix" target="_blank" rel="noopener noreferrer">github</a>
+        <a href="https://x.com/xzon1x" target="_blank" rel="noopener noreferrer">x</a>
+        <a href="https://yoursit.ee/xz" target="_blank" rel="noopener noreferrer">full bio</a>
+        <a href="https://discord.com/users/1001166646993494167" target="_blank" rel="noopener noreferrer">discord</a>
+        </nav>
+      </main>
+    </div>
+
+    <footer>
+      <div class="footer-links">
+        <a href="mailto:contact@xzonix.es" target="_blank" rel="noopener noreferrer">mail</a>
+        <a href="https://xzmx.de/ig" target="_blank" rel="noopener noreferrer">check out my last post</a>
+        <a href="https://soundcloud.com/xzonix/something" target="_blank" rel="noopener noreferrer">my artist attempt</a>
+        <a href="main site" target="_blank" rel="noopener noreferrer">xzonix.es</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
